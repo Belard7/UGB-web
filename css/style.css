@@ -169,6 +169,10 @@ header{
 /*trendigs*/
 .container-content{
     width: 1200px;
+    margin: auto;
+}
+.container-trendings {
+    max-width: 1200px;
     align-self: center;
     width: 100%;
     display: flex;
@@ -178,23 +182,15 @@ header{
 .container-content h2{
     font-size: 32px;
 }
-.container-trendings{
-    width: 100%;
-    display: flex;;
-    align-items: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
 .headline h2{
     margin-bottom: 0 !important;
 }
 .headline{
-    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    max-width: 1200px;
     align-self: center;
     margin-bottom: 40px;
 }
@@ -213,7 +209,6 @@ header{
 }
 
 h2{
-
     font-size: 1.5em;
     margin-block-start: 0.83em;
     margin-block-end: 0.83em;
@@ -246,9 +241,6 @@ h2{
     cursor: pointer;
     filter: invert(0);
 }
-.container-trendings{
-    width: 1200px;
-}
 
 .list-items {
     margin: -15px;
@@ -256,13 +248,85 @@ h2{
     position: relative;
     justify-content: center;
     flex-wrap: wrap;
-    width: 1200px;
 }
 .listing-items .item .cover picture img, .listing-items .item .cover video img{
     position: relative;
     width: 100%;
     height: 100%;
 }
+.list-items .items{
+    margin: 15px;
+    width: calc(33.33333% - 30px);
+    z-index: 1;
+    min-width: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-items .item .cover{
+    padding-top: 57.4%;
+    transition: transform .3s;
+    display: flex;
+    position: relative;
+}
+.list-items .item .cover .video picture{
+    z-index: 1;
+}
+
+.list-items .item .cover picture, .list-items .items .cover video{
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.list-items .item .cover .video video{
+    opacity: 0;
+}
+
+
+
+.list-items .items .information{
+    
+    display: flex;
+    position: relative;
+    z-index: 1;
+    min-height: 26px;
+    height: 100%;
+}
+.list-items .items .information .text{
+    display: inline-flex;
+    min-width: 0;
+    flex-direction: column;
+    
+}
+.list-items .items .information .name{
+    font-size: 15px;
+    margin-right: 10px;
+    display: inline-flex;
+    align-items: center;
+    min-width: 0;
+}
+
+
+.list-items .items .information .name .title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.list-items .items .information .price{
+    margin-left: auto;
+}  
+
+.list-items .items .information .price {
+    font-size: 26px;
+}
+
 
 img{
     overflow-clip-margin: content-box;
