@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Source Code Pro', sans-serif;
+}
+body  {
+    --darkreader-bg--color: #cc4300;
+    --darkreader-text--color: #ff651a;
+    --darkreader-border--color: #b33b00;
+    --darkreader-bg--color-link-hover: #cc8600;
+    --darkreader-text--color-link-hover: #ffb01a;
+    --darkreader-bg--color-very-light: #414649;
+    --darkreader-text--color-very-light: #bbb5ac;
+    --darkreader-border--color-very-light: #444a4d;
+    --darkreader-bg--color-light: #52585c;
+    --darkreader-text--color-light: #a8a095;
+    --darkreader-border--color-light: #4d5356;
+    --darkreader-bg--color-medium-light: #52595c;
+    --darkreader-text--color-medium-light: #a39b8f;
+    --darkreader-border--color-medium-light: #686156;
+    --darkreader-bg--color-medium: #2e3234;
+    --darkreader-border--color-medium: #786f62;
+    --darkreader-bg--color-medium-dark: #26292a;
+    --darkreader-border--color-medium-dark: #7c7365;
+    --darkreader-bg--color-dark: #1d2021;
+    --darkreader-border--color-dark: #7f7668;
+    --darkreader-bg--color-very-dark: #161819;
+    --darkreader-bg--color-ultra-dark: #0c0d0e;
+    --darkreader-text--color-ultra-dark: #dedbd7;
+    --darkreader-border--color-ultra-dark: #877d6f;
+    --darkreader-bgimg--fire-gradient: linear-gradient(10deg, #cc6600, rgba(0, 0, 0, 0)) #ff4020;
+    --darkreader-bgimg--fire-gradient-hover: linear-gradient(190deg, #b90000, #cc6600);
+}
+body{
+    color: rgb(237, 230, 227);
+    background: var(--darkreader-bg--color-dark);
+}
+@media screen and (min-width: 1000px){
+    body{
+        font-size: 15px;
+    }
+    
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background: rgb(0, 0, 0);
+    box-shadow: 0 4px 25px -22px #000;
+    z-index: 2;
+}
+
+.header-content{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.logo span { 
+    font-size: 25px;
+    color: rgb(114, 35, 114);
+}
+.logo strong{
+    font-size: 25px;    
+    color: rgba(90, 77, 176, 0.66);
+    position: relative;
+    top: 10px;
+}
+
+.menu{
+    height: 80px;
+}
+.menu nav {
+    height: 100%;
+}
+.menu nav ul{
+    height: 100%;
+    display: flex;
+    list-style: none;
+
+}
+
+.menu nav ul li
+{
+    height: 100%;
+    display: flex;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+.menu nav ul li:hover{
+    background: #ff4d00;
+}
+.menu nav ul li a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: .3s;
+}
+
+/* Portada */
+
+.container-cover{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-top: 80px;
+    background-image: url(../images/ofFallen.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-info-cover{
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    margin-left: 35px;
+    top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+}
+.container-info-cover h1{
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.discount {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    background-color: #ff4d00;
+    border-radius: 40px;
+}
+.price{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+/*portada*/
+
+/*trendigs*/
+.container-content{
+    width: 1200px;
+    align-self: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
+.container-content h2{
+    font-size: 32px;
+}
+
+.headline h2{
+    margin-bottom: 0 !important;
+}
+.headline{
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    align-self: center;
+    margin-bottom: 40px;
+}
+
+.headline title-more{
+    color: rgb(232, 230, 227);
+}
+
+.headline title-more{
+    display: flex;
+    align-items: center;
+}
+
+h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.headline .title-more .icon-arrow{
+background-color: var(--darkreader-bg--color-medium-light);
+
+}
+.headline .title-more .icon-arrow{
+    margin-left: 10px;
+    margin-top: 6px;
+}
+.icon-xs{
+    width: 20px;
+    height: 20px;
+    flex: 0 0 20px;
+}
+.icon-arrow {
+    background-image: url(../images/icon-arrow.svg);
+}
+
+.icon-arrow:hover{
+    filter: invert(0);
+}
+.container-trendings{
+    width: 1200px;
+}
+.item-trendings{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.list-items {
+    margin: -15px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/*FOOTER*/
+.container-footer {
+    width: 100%;
+    padding: 40px 0 ;
+    background-color: var(--darkreader-bg--color-very-dark);
+    margin-top: 40px;
+}
+.container-footer footer{
+    max-width: 1200px;
+    margin: auto;
+}
+.container-footer footer .redes-footer{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container-footer footer .redes-footer .icon-redes-footer{
+    font-size: 20px;
+    margin: 20px;
+    background-color: var(--darkreader-bg--color-light);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    color: #a2a2a2 ;
+}
+.container-footer footer .redes-footer .fa-facebook-f:hover{
+    background: #41579A;
+    color: #ffffff;
+}
+.container-footer footer .redes-footer .fa-twitter:hover{
+    background: #5c77ca;
+    color: #ffffff;
+}
+.container-footer footer .redes-footer .fa-instagram:hover{
+    background: linear-gradient(to top right, #FCDE30, #E9712A, #D2313B, #AE4198, #7540A1, #5443AB );
+    color: #ffffff;
+}
+.container-footer footer hr{
+    margin-top: 20px;
+    border: none;
+    height: 2px;
+    background: var(--darkreader-bg--color-very-light);
+}
+.container-footer h4{
+    text-align: center;
+    margin-top: 40px;
+    color: var(--darkreader-bg--color-very-light);
+}
+
+
+
+
+
+
