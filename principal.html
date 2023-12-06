@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta name="describtion" content="Ugb-Gaming is a gaming community that is  based on the game Unturned.">
     <meta name="keywords" content="Ugb-Gaming, Ugb, Gaming, Unturned, Unturned Server, Unturned Community, Unturned Community Server>
     <meta name="author" content="Jimmy-Rivas">
@@ -12,8 +12,8 @@
     <link rel="icon" href="images/control-de-juego.png" type="image/png">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="prefetch" href="https://fonts.gstatic.com">
-    <script src="Javascript/index."></script>
-    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" href="css/principal.css">
     
 </head>
 <body>
@@ -25,7 +25,7 @@
             <div class="logo"><span >UGB</span>🎮<strong>Gaming</strong></div>
             
 
-        <div class="menu">
+        <div class="menu" id="show-menu">
 
             <nav>
                 <ul>
@@ -42,6 +42,11 @@
         <div id="ctn-icon-search"><i class="fa-solid fa-magnifying-glass" id="icon-search"></i>
         </div>
     </div>
+
+    <div id="icon-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+
     </header>
 
     <div id="ctn-bars-search">
@@ -59,6 +64,7 @@
     <div id="cover-ctn-search"></div>
 
     <!-- Portada  -->
+    <div class="container-all" id="move-content">
     <div class="container-cover">
         <div class="container-info-cover">
             <h1>Lord Of Fallen</h1>
@@ -94,9 +100,9 @@
                 <picture>
                     <img class="picture" src="images/ea-sports-fc-24-pc-juego-ea-app-cover.jpg" loading="lazy" alt="cvideo">
                 </picture>
-                <video preload="none" loop muted playsinline>
+            <!-- <video preload="none" loop muted playsinline>
                     <source src="images/ea-sports-fc-24-pc-juego-ea-app-preview.webm" type="video/webm">
-                </video>
+                </video>-->
             </a>
         
             <div class="information">
@@ -112,9 +118,9 @@
             <picture>
                 <img class="picture" src="images/avatar-frontiers-of-pandora-xbox-series-x-s-xbox-series-x-s-juego-microsoft-store-cover.jpg" loading="lazy" alt="cvideo">
             </picture>
-            <video preload="none" loop muted playsinline>
+            <!--<video preload="none" loop muted playsinline>
                 <source src="images/avatar-frontiers-of-pandora-xbox-series-x-s-xbox-series-x-s-juego-microsoft-store-preview.webm" type="video/webm">
-            </video>
+            </video> -->
         </a>
     
         <div class="information">
@@ -130,14 +136,14 @@
             <picture>
                 <img class="picture" src="images/mortal-kombat-x-pc-juego-steam-cover.jpg" loading="lazy" alt="cvideo">
             </picture>
-            <video preload="none" loop muted playsinline>
+            <!--<video preload="none" loop muted playsinline>
                 <source src="images/mortal-kombat-x-pc-juego-steam-preview.webm" type="video/webm">
-            </video>
+            </video>-->
         </a>
     
         <div class="information">
             <div class="text">
-                <span class="name">EA Sports FC 24</span>
+                <span class="name">Morta kombat X</span>
             </div>
             <div class="price">$35.00</div>
         </div>
@@ -150,9 +156,9 @@
                 alt="cvideo">
             </picture>
 
-            <video preload="none" loop muted playsinline>
+            <!--<video preload="none" loop muted playsinline>
                 <source src="images/cyberpunk-2077-ultimate-edition-ultimate-edition-pc-juego-gog-com-preview.webm" type="video/webm">
-            </video>
+            </video>-->
 
         </a>
             <div class="information">
@@ -171,16 +177,16 @@
                 alt="cvideo">
             </picture>
 
-            <video preload="none" loop muted playsinline>
+           <!--<video preload="none" loop muted playsinline>
                 <source src="images/call-of-duty-modern-warfare-iii-lote-multigeneracion-xbox-one-xbox-series-x-s-cross-gen-bundle-xbox-one-xbox-series-x-s-juego-microsoft-store-preview.webm" type="video/webm">
-            </video>
+            </video>-->
 
         </a>
             <div class="information">
                 <div class="text">
                     <span class="name">Call of Duty modern warfare III</span>
                 </div>
-                <div class="price">$$$</div>
+                <div class="price">$69.99</div>
 
             </div>
 
@@ -192,16 +198,16 @@
                 alt="cvideo">
             </picture>
 
-            <video preload="none" loop muted playsinline>
+           <!-- <video preload="none" loop muted playsinline>
                 <source src="images/destiny-2-la-forma-final-pase-anual-dlc-season-pc-juego-steam-preview.webm" type="video/webm">
-            </video>
+            </video>-->
 
         </a>
             <div class="information">
                 <div class="text">
                     <span class="name">Destiny 2</span>
                 </div>
-                <div class="price">$$$</div>
+                <div class="price">$45.00</div>
 
             </div>
 
@@ -213,16 +219,16 @@
                 alt="cvideo">
             </picture>
 
-            <video preload="none" loop muted playsinline>
+            <!--<video preload="none" loop muted playsinline>
                 <source src="images/ea-sports-wrc-pc-juego-ea-app-preview.webm" type="video/webm">
-            </video>
+            </video>-->
 
         </a>
             <div class="information">
                 <div class="text">
                     <span class="name">EA Sport WCR</span>
                 </div>
-                <div class="price">$$$</div>
+                <div class="price">$60.00</div>
 
             </div>
 
@@ -234,16 +240,16 @@
                 alt="cvideo">
             </picture>
 
-            <video preload="none" loop muted playsinline>
+            <!--<video preload="none" loop muted playsinline>
                 <source src="images/red-dead-redemption-2-pc-juego-rockstar-preview.webm" type="video/webm">
-            </video>
+            </video>-->
 
         </a>
             <div class="information">
                 <div class="text">
                     <span class="name">Red Dead Redemption 2</span>
                 </div>
-                <div class="price">$$$</div>
+                <div class="price">$70.00</div>
 
             </div>
 
@@ -255,16 +261,16 @@
                 alt="cvideo">
             </picture>
 
-            <video preload="none" loop muted playsinline>
+            <!--<video preload="none" loop muted playsinline>
                 <source src="images/starfield-pc-juego-steam-preview.webm" type="video/webm">
-            </video>
+            </video>-->
 
         </a>
             <div class="information">
                 <div class="text">
                     <span class="name">Starfield</span>
                 </div>
-                <div class="price">$$$</div>
+                <div class="price">$69.00</div>
 
             </div>
 
@@ -293,7 +299,8 @@
 
         </footer>
     </div>
+    </div>
 
-    
+    <script src="Javascript/index.js"></script> 
 </body>
 </html>

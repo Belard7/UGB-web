@@ -1,14 +1,6 @@
-document.addEventListener('DOMContentLoaded', (event) => {
+document.getElementById("icon-menu").addEventListener("click", mostrar_menu);
 
-document.querySelectorAll('.items').forEach(item => {
-    item.addEventListener('mouseover', event => {
-        const video = event.currentTarget.querySelector('video');
-        video.play();
-    });
-
-    item.addEventListener('mouseout', event => {
-        const video = event.currentTarget.querySelector('video');
-        video.pause();
-    });
-});
-});
+function mostrar_menu(){
+    document.getElementById("move-content").classList.toggle('move-container-all');
+    document.getElementById("show-menu").classList.toggle('show-lateral');
+}
